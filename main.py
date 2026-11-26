@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """Make the AI Judge Feel Proud: A Family Scene entry.
 
-Writes a two-sentence family scene to /output/entry.txt and prints it
+Writes a two-line family scene to /output/entry.txt and prints it
 with a character count. The scene text itself is fixed: it must stay
 within the 280-character limit for this bounty.
 """
 
 from pathlib import Path
 
-ENTRY = "Every Sunday my dad irons his best shirt for the 9:40 video call with Gran \u2014 94, deaf in one ear, the only person he ever dresses up for. Last week she said he looked handsome, and he spent the whole call blinking hard so she wouldn't see him cry."
+ENTRY = (
+    "Every Sunday my dad still irons his best shirt for the 9:40 video call "
+    "with Gran \u2014 94, deaf in one ear, the only person he ever dresses up for.\n"
+    "Last week she told him he looked handsome, and he spent the whole call "
+    "blinking hard so she wouldn't see him cry."
+)
 OUTPUT_PATH = Path("/output/entry.txt")
 MAX_ENTRY_CHARS = 280
 
